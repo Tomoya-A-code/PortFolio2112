@@ -1,0 +1,218 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+/*
+Common
+================================================ */
+body {
+    text-align: center;
+    color: #eaeae8;
+    height: 100%;
+}
+
+/*
+Body内容
+================================================ */
+.main {
+    padding-bottom: 120px;
+}
+
+.site-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.main .sub-title {
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.service-description {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+}
+
+.service-text {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 2;
+}
+
+.img-list li {
+    margin-bottom: 150px;
+}
+
+.img-list li:last-child {
+    margin-bottom: 0;
+}
+
+.img-list li img {
+    max-width: 65%;
+}
+
+.my-function {
+    margin-bottom: 60px;
+}
+
+.my-function li {
+    margin-bottom: 20px;
+}
+
+.test-wrapper {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.test-wrapper h2 {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.test-wrapper p {
+    padding-bottom: 15px;
+    font-size: 18px;
+    text-align: left;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.btn {
+    font-family: 'Dancing Script', cursive;
+    color: #eaeae8;
+    font-size: 1.4rem;
+    border: 1px solid #eaeae8;
+    border-bottom: 1px solid #6d3e3e;
+    border-right: 1px solid #6d3e3e;
+    border-radius: 5px;
+    text-decoration: none;
+    background: #c75f5f;
+    box-shadow: 0 5px #6d3e3e;
+    position: relative;
+    display: inline-block;
+    top: -5px;
+    margin-top: 80px;
+    padding: 16px 35px;
+}
+
+.btn:hover {
+    box-shadow: 0 1px #6d3e3e;
+    top: 3px;
+}
+
+/*
+スマートフォンサイズ
+================================================ */
+@media screen and (max-width:430px) { 
+    /* ヘッダー */
+    .header-list {
+        padding: 5px;
+    }
+
+    /* メイン */
+    .main {
+        width: 100%;
+        padding-bottom: 60px;
+    }
+    
+    .service-description {
+        font-size: 15px;
+        max-width: 100%;
+        text-align: left;
+    }
+    
+    .service-text {
+        font-size: 14px;
+        margin-bottom: 30px;
+        margin-right: 0;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .img-list li {
+        margin-bottom: 90px;
+    }
+    
+    .img-list li:last-child {
+        margin-bottom: 0;
+    }
+    
+    .img-list li img {
+        max-width: 80%;
+    }
+
+    .test-wrapper h2 {
+        width: 100%;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .test-wrapper p {
+        padding-bottom: 15px;
+        font-size: 15px;
+        text-align: left;
+        margin: 0;
+        width: 100%;
+        line-height: 1.5;
+    }
+
+    .my-function {
+        width: 100%;
+        margin-bottom: 60px;
+        margin-right: auto;
+    }
+    
+    .my-function li {
+        margin-bottom: 20px;
+    }
+    
+
+    /* フッター */
+    footer {
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+        display: flex;
+    }
+        
+    .menu img {
+        max-width: 120px;
+        height: auto;
+    }
+
+    .footer-list {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    
+    .footer-list li {
+        margin-left: 20px;
+        margin-top: 30px;
+        position: relative;
+    }
+    
+    .footer-list li::after {
+        content: '';
+        position: absolute;
+        left: -9px;
+        bottom: 1px;
+        width: 1.5px;
+        height: 20px;
+    }
+    
+    footer p {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 10px;
+    }
+
+    
+}

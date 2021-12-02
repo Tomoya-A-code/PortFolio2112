@@ -1,0 +1,506 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+/*
+Common
+================================================ */
+body {
+    font-family: 'Hind', sans-serif;
+    color: black;
+    max-width: 100%;
+    text-align: center;
+}
+
+.title {
+    font-size: 100px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-family: 'Caveat', cursive;    
+}
+
+/*
+Header
+================================================ */
+header {
+    width: 100%;
+}
+
+.header-wrapper {
+    width: 100%;
+    display: flex;
+    color: rgb(5, 5, 5);
+    background-color: rgb(234, 234, 232, 0.8);
+}
+.header-logo {
+    max-width: 180px;
+    height: auto;
+}
+
+.header-list {
+    display: flex;
+    font-weight: bolder;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-list li {
+    margin-left: 100px;
+}
+
+/*
+Home
+================================================ */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-box {
+    background: rgb(255, 255, 255, 0.83);
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+    height: auto;
+}
+
+.home h1 {
+    font-size: 100px;
+    font-family: 'Caveat', cursive;
+    margin-bottom: 25px;
+}
+
+.home p {
+    font-size: 35px;
+    font-family: 'Caveat', cursive;
+}
+
+/*
+About
+================================================ */
+.about {
+    color: #eaeae8;
+    text-align: center;
+    width: 100%;
+    background-image: url('../images/about-bg.png');
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-position: center top;
+    background-attachment: fixed;
+    padding-bottom: 240px;
+    padding-top: 40px;
+}
+
+.about .title {
+    text-align: left;
+    max-width: 75%;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.about h3 {    
+    max-width: 950px;    
+    margin: 0 auto;    
+    text-align: left;    
+    font-size: 35px;   
+    padding-bottom: 10px;
+}
+
+.about .capital-1 {
+    text-shadow: 2px 2px 0 rgba(0,0,0,.1);
+    color: #ec96a4;
+}
+
+.about .capital-2 {
+    text-shadow: 2px 2px 0 rgba(0,0,0,.1);
+    color: #dfe166;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 25px;
+}
+
+.list-wrapper {
+    display: inline-block;
+    text-align: center;
+}
+
+.sns-list {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 90px;
+}
+
+.sns-list li {
+    font-size: 50px;
+    margin-right: 80px;
+}
+
+.sns-list li:last-child {
+    margin-right: 0;
+}
+
+/*
+Works
+================================================ */
+.works-about {
+    width: 100%;
+    background-image: url('../images/contact-bg.png');
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+.works {
+    width: 100%;
+    padding-top: 30px;
+    background-color: rgb(35, 35, 35, 0.6);
+    color: #eaeae8;
+}
+
+.bg-1 {
+    background-image: url('../works-images/blog-1.png');
+    cursor: pointer;
+    background-size: 100%;
+    opacity: 0.7;
+}
+
+.bg-2 {
+    background-image: url('../works-images/corporate-1.png');
+    cursor: pointer;
+    background-size: 100%;
+    opacity: 0.7;
+}
+
+.bg-3 {
+    background-image: url('../works-images/lp-1.png');
+    cursor: pointer;
+    background-size: 100%;
+    opacity: 0.7;
+}
+
+.bg-4 {
+    background-image: url('../works-images/techbook-1.png');
+    cursor: pointer;
+    background-size: 100%;
+    opacity: 0.7;
+}
+
+.works-title {
+    margin-top: 0;
+    font-size: 100px;
+    margin-bottom: 30px;
+    font-family: 'Caveat', cursive; 
+}
+
+.clover {
+    display: flex;
+    flex-wrap: wrap;
+    width: 532px;
+    margin: 20px auto;
+    padding-bottom: 50px;
+}
+
+.clover img {
+    margin: 8px;
+    width: 250px;
+}
+
+.left-top {
+    border-radius: 50% 50% 0 50%;
+}
+
+.right-top {
+    border-radius: 50% 50% 50% 0;
+}
+
+.left-bottom {
+    border-radius: 50% 0 50% 50%;
+}
+
+.right-bottom {
+    border-radius: 0 50% 50% 50%;
+}
+
+/*
+Contact
+================================================ */
+.contact {
+    color: #eaeae8;
+    text-align: center;
+    padding-bottom: 160px;
+    padding-top: 40px;
+}
+
+.contact .title {
+    text-align: left;
+    max-width: 75%;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.contact ul {
+    font-size: 1.1rem;
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact ul li:nth-child(odd) {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact ul li:nth-child(even) {
+    margin-bottom: 60px;
+}
+
+/*
+Footer
+================================================ */
+footer {
+    color: #eaeae8;
+    background-color: #3c363d;
+    opacity: 0.9;
+}
+.menu {
+    display: flex;
+    text-align: center;
+}
+
+.footer-img {
+    margin: 0 auto;
+}
+
+.menu img {
+    max-width: 180px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: right;
+    margin: 0 auto;
+
+}
+
+.footer-list li {
+    margin-left: 100px;
+    margin-top: 48px;
+    position: relative;
+}
+
+.footer-list li::after {
+    content: '';
+    position: absolute;
+    left: -15px;
+    bottom: 40px;
+    width: 1.5px;
+    height: 20px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid rgb(154, 158, 171, 0.3);
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+}
+
+/*
+スマートフォンサイズ
+================================================ */
+@media screen and (max-width:430px) { 
+
+    /* 共通 */
+    .title {
+        font-size: 70px;
+        margin-bottom: 40px;
+        margin-top: 50px;
+    }
+
+    /* ヘッダー */
+    .header-wrapper {
+        width: 100%;
+        display: block;
+    }
+
+    .header-logo {
+        max-width: 120px;
+        height: auto;
+    }
+
+    .header-list {
+        display: block;
+        font-weight: bolder;
+        margin: 0 auto;
+    }
+    
+    .header-list li {
+        display: inline-block;
+        margin-left: 35px;
+    }
+
+    .header-list li:nth-child(1) {
+        margin-left: 0;
+    }
+
+    /* ホーム */
+    .container {
+        height: 75vh;
+    }
+
+    .home-box {
+        border: none;
+        width: 90%;
+    }
+
+    .home h1 {
+        font-size: 70px;
+        margin-bottom: 25px;
+    }
+    
+    .home p {
+        font-size: 17px;
+    }
+
+    /* アバウト */
+    .about {
+        padding-bottom: 90px;
+    }
+
+    .about .title {
+        max-width: 75%;
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+
+    .about h3 {    
+        max-width: 100%;    
+        font-size: 25px; 
+        padding-left: 40px;  
+        padding-bottom: 30px;
+    }
+        
+    .about-text {
+        font-size: 0.9rem;
+        max-width: 80%;
+    }
+    
+    .sns-list {
+        margin-top: 60px;
+    }
+    
+    .sns-list li {
+        font-size: 50px;
+        margin-right: 60px;
+    }
+    
+    /* ワークス */
+    .works {
+        width: 100%;
+        padding-top: 25px;
+    }
+
+    .works-title {
+        font-size: 70px;
+        margin-bottom: 30px;
+    }
+
+    .clover {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .clover img {
+        margin: 5px;
+        width: 175px;
+    }
+
+    /* コンタクト */
+    .contact {
+        padding-bottom: 60px;
+        padding-top: 0;
+    }
+
+    .contact .title {
+        max-width: 75%;
+        margin: 0 auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .contact ul {
+        font-size: 1.1rem;
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .contact ul li:nth-child(odd) {
+        font-weight: bold;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .contact ul li:nth-child(even) {
+        margin-bottom: 60px;
+    }
+
+    /* フッター */
+    footer {
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+        display: block;
+    }
+        
+    .menu img {
+        max-width: 120px;
+        height: auto;
+    }
+
+    .footer-list {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .footer-list li {
+        margin-left: 20px;
+        margin-top: 30px;
+        position: relative;
+    }
+    
+    .footer-list li::after {
+        content: '';
+        position: absolute;
+        left: -9px;
+        bottom: 1px;
+        width: 1.5px;
+        height: 20px;
+    }
+    
+    footer p {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 10px;
+    }
+}
